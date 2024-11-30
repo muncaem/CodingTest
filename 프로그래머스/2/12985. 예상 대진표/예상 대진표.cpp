@@ -11,8 +11,8 @@ int solution(int n, int a, int b)
     vector<bool> tree(n, false);
 
     //궁금한 위치의 인덱스
-    tree[a] = true;
-    tree[b] = true;
+    tree[a-1] = true;
+    tree[b-1] = true;
 
     //바로 붙어있는 경우
     for (int i = 0; i < n; i += 2)
